@@ -1,0 +1,66 @@
+\documentclass[a4paper]{book}
+\usepackage[russian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+
+\usepackage{amsmath,amsthm}
+\newtheoremstyle{problemstyle}  % <name>
+        {3pt}                 % <space above>
+        {3pt}                 % <space below>
+        {\normalfont}         % <body font>
+        {}                    % <indent amount}
+        {\normalfont\bfseries}   % <theorem head font>
+        {\normalfont\bfseries.} % <punctuation after theorem head>
+        {.5em}              % <space after theorem head>
+        {}  % <theorem head spec (can be left empty, meaning `normal')>
+\theoremstyle{problemstyle}
+\newtheorem{problem}{} % нумерация задач задумана сквозной
+
+\newcommand{\divisible}{\mathop{\raisebox{-2pt}{\vdots}}}
+
+\usepackage{hyperref}
+
+\author{Трус \and Балбес \and Бывалый}
+\title{Задачник для детей от 15 до 25}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \chapter{Геометрия}
+    \begin{problem}
+        Определить объём n-мерного аналога тетраэдра для всех \( n \ge 3 \).
+    \end{problem}
+    \begin{problem}
+        Исследовать зависимость отношения объёма гиперсферы к объёму описанного
+        около неё гиперкуба от размерности евклидова пространства.
+    \end{problem}
+    \chapter{Анализ}
+    \begin{problem}
+        Имеется сферическое однородное облако плазмы, которое покоится в
+        начальный момент. Пусть его радиус \( R_0 \), а заряд \( Q_0 \).
+        Определить характер его движения и получить зависимость плотности заряда
+        от координат и времени \( \rho(\vec{r}, t) \).
+    \end{problem}
+    \begin{problem}
+        Определить закон движения <<солнечного паруса>> (идеально отражающего
+        зеркала) площадью \( S \) и массой \(m\) в поле тяготения Солнца.
+    \end{problem}
+    \begin{problem}
+        Как будет выглядеть формула Циолковского для фотонной ракеты, двигатель
+        которой выполнен в виде параболического зеркала, в фокусе которого
+        происходит аннигиляция горючего из вещества и антивещества?
+    \end{problem}
+    \chapter{Комбинаторика}
+    \begin{problem}
+        <<Счастливым>> называется билет с 6-значным номером, сумма первых трёх
+        цифр которого равна сумме последних трёх\footnote{в Волгограде такие
+        билеты называют <<счастливыми по-московски>>; существуют также билеты,
+        <<счастливые по-питерски>>}. Сколько всего существует
+        <<счастливых>> билетов?
+    \end{problem}
+    \begin{problem}
+        Возможно ли расставить по кругу числа от 1 до 12 так, чтобы для любых 3
+        последовательно расположенных чисел \(a\), \(b\) и \(c\) выполнялось
+        условие \( b^2 - ac \divisible 13 \)? Если да, то сколько различных
+        способов (без учёта начального элемента и направления обхода) существует?
+    \end{problem}
+\end{document}
